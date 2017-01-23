@@ -1,0 +1,12 @@
+C:\Users\Hay Zohar\Documents\Visual Studio 2015\Projects\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.dll.config
+C:\Users\Hay Zohar\Documents\Visual Studio 2015\Projects\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.dll
+C:\Users\Hay Zohar\Documents\Visual Studio 2015\Projects\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.pdb
+C:\Users\Hay Zohar\Documents\Visual Studio 2015\Projects\ActionResponseCharacter\ActionResponseCharacter\obj\Debug\ActionResponseCharacter.dll
+C:\Users\Hay Zohar\Documents\Visual Studio 2015\Projects\ActionResponseCharacter\ActionResponseCharacter\obj\Debug\ActionResponseCharacter.pdb
+C:\Users\Hay Zohar\Documents\Visual Studio 2015\Projects\ActionResponseCharacter\ActionResponseCharacter\obj\Debug\ActionResponseCharacter.csprojResolveAssemblyReference.cache
+C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter\obj\Debug\ActionResponseCharacter.csprojResolveAssemblyReference.cache
+C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter\obj\Debug\ActionResponseCharacter.dll
+C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter\obj\Debug\ActionResponseCharacter.pdb
+C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.dll.config
+C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.dll
+C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.pdb
