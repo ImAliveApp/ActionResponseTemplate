@@ -9,4 +9,5 @@
     getIsAirplaneModeOn(): boolean;
     getCurrentTime(): ICurrentTime;
     getMaximalResizeRatio(): number;
+    getSystemLanguage(): string;
 };
