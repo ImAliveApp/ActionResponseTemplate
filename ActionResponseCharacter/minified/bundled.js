@@ -57,21 +57,21 @@ var AliveClass = (function () {
     AliveClass.prototype.onBackgroundTick = function (time) {
         this.onTick(time);
     };
-    AliveClass.prototype.onStart = function (mHandler) {
-        this.actionManager = mHandler.getActionManager();
-        this.resourceManager = mHandler.getResourceManager();
-        this.databaseManager = mHandler.getDatabaseManager();
-        this.characterManager = mHandler.getCharacterManager();
-        this.tamagochyManager = mHandler.getMenuManager();
-        this.configurationMananger = mHandler.getConfigurationManager();
-        this.restManager = mHandler.getRestManager();
-        this.awarenessManager = mHandler.getAwarenessManager();
+    AliveClass.prototype.onStart = function (handler, disabledPermissions) {
+        this.actionManager = handler.getActionManager();
+        this.resourceManager = handler.getResourceManager();
+        this.databaseManager = handler.getDatabaseManager();
+        this.characterManager = handler.getCharacterManager();
+        this.tamagochyManager = handler.getMenuManager();
+        this.configurationMananger = handler.getConfigurationManager();
+        this.restManager = handler.getRestManager();
+        this.awarenessManager = handler.getAwarenessManager();
         this.resourceManagerHelper = new ResourceManagerHelper(this.resourceManager);
         this.actionManager.move(0, this.configurationMananger.getScreenHeight(), 0);
         this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();
         this.drawAndPlayRandomResourceByCategory(AgentConstants.CHARACTER_ACTIVATION);
     };
-    AliveClass.prototype.onActionReceived = function (categoryName) {
+    AliveClass.prototype.onActionReceived = function (categoryName, jsonedData) {
         this.actionManager.showMessage(categoryName + " received");
         this.drawAndPlayRandomResourceByCategory(categoryName);
     };
@@ -3002,6 +3002,14 @@ var ViewType = (function () {
     return ViewType;
 }());
 //# sourceMappingURL=ViewType.js.map
+//# sourceMappingURL=IBaseMenuItem.js.map
+//# sourceMappingURL=IButtonMenuItem.js.map
+//# sourceMappingURL=ICheckBoxMenuItem.js.map
+//# sourceMappingURL=IMenuHeader.js.map
+//# sourceMappingURL=IPaintMenuItem.js.map
+//# sourceMappingURL=IPictureMenuItem.js.map
+//# sourceMappingURL=IProgressBarMenuItem.js.map
+//# sourceMappingURL=ITextBoxMenuItem.js.map
 //# sourceMappingURL=IAliveLatLng.js.map
 //# sourceMappingURL=IAliveLatLngBounds.js.map
 //# sourceMappingURL=IAliveLocation.js.map
@@ -3648,11 +3656,3 @@ var PlaceType = (function () {
     return PlaceType;
 }());
 //# sourceMappingURL=PlaceType.js.map
-//# sourceMappingURL=IBaseMenuItem.js.map
-//# sourceMappingURL=IButtonMenuItem.js.map
-//# sourceMappingURL=ICheckBoxMenuItem.js.map
-//# sourceMappingURL=IMenuHeader.js.map
-//# sourceMappingURL=IPaintMenuItem.js.map
-//# sourceMappingURL=IPictureMenuItem.js.map
-//# sourceMappingURL=IProgressBarMenuItem.js.map
-//# sourceMappingURL=ITextBoxMenuItem.js.map

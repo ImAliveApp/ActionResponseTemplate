@@ -10,3 +10,9 @@ C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter
 C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.dll.config
 C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.dll
 C:\Users\Hay Zohar\Desktop\codes\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.pdb
+C:\Users\Hay Zohar\Documents\GitHub\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.dll.config
+C:\Users\Hay Zohar\Documents\GitHub\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.dll
+C:\Users\Hay Zohar\Documents\GitHub\ActionResponseCharacter\ActionResponseCharacter\bin\ActionResponseCharacter.pdb
+C:\Users\Hay Zohar\Documents\GitHub\ActionResponseCharacter\ActionResponseCharacter\obj\Debug\ActionResponseCharacter.csprojResolveAssemblyReference.cache
+C:\Users\Hay Zohar\Documents\GitHub\ActionResponseCharacter\ActionResponseCharacter\obj\Debug\ActionResponseCharacter.dll
+C:\Users\Hay Zohar\Documents\GitHub\ActionResponseCharacter\ActionResponseCharacter\obj\Debug\ActionResponseCharacter.pdb
