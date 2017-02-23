@@ -108,6 +108,7 @@ class AliveClass implements IAliveAgent {
     }
 
     onActionReceived(actionName: string, jsonedData: string): void {
+
         this.actionManager.showMessage(actionName + " received");
         this.drawAndPlayRandomResourceByCategory(actionName);
     }
