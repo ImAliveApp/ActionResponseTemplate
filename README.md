@@ -19,8 +19,8 @@ Most of the work is done in the "onActionReceived" method:
 ```
 
     onActionReceived(actionName: string, jsonedData: string): void {
-        this.actionManager.showMessage(categoryName + " received");
-        this.drawAndPlayRandomResourceByCategory(categoryName);
+        this.actionManager.showMessage(actionName + " received");
+        this.drawAndPlayRandomResourceByCategory(actionName);
     }
 ```
 
