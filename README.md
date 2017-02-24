@@ -1,4 +1,4 @@
-## Action Response Character:
+## Action Response Template:
 
 ### Main concept:
 This sample is of a character that responds to actions (events) that occures on the phone.
