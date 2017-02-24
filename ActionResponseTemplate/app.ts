@@ -107,7 +107,7 @@ class AliveClass implements IAliveAgent {
         this.drawAndPlayRandomResourceByCategory(AgentConstants.CHARACTER_ACTIVATION);
     }
 
-    onEventOccurred(eventName: string, jsonedData: string): void {
+    onPhoneEventOccurred(eventName: string, jsonedData: string): void {
         this.actionManager.showMessage(eventName + " received");
         this.drawAndPlayRandomResourceByCategory(eventName);
     }

@@ -3,3 +3,4 @@ C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplat
 C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\bin\ActionResponseTemplate.pdb
 C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\obj\Debug\ActionResponseTemplate.dll
 C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\obj\Debug\ActionResponseTemplate.pdb
+C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\obj\Debug\ActionResponseTemplate.csprojResolveAssemblyReference.cache

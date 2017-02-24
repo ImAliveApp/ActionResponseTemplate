@@ -71,7 +71,7 @@ var AliveClass = (function () {
         this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();
         this.drawAndPlayRandomResourceByCategory(AgentConstants.CHARACTER_ACTIVATION);
     };
-    AliveClass.prototype.onEventOccurred = function (eventName, jsonedData) {
+    AliveClass.prototype.onPhoneEventOccurred = function (eventName, jsonedData) {
         this.actionManager.showMessage(eventName + " received");
         this.drawAndPlayRandomResourceByCategory(eventName);
     };
@@ -316,6 +316,7 @@ var AgentConstants = (function () {
 //# sourceMappingURL=IAliveUserActivity.js.map
 //# sourceMappingURL=IAliveWeather.js.map
 //# sourceMappingURL=ICurrentTime.js.map
+//# sourceMappingURL=IMenuBuilder.js.map
 //# sourceMappingURL=ITime.js.map
 //# sourceMappingURL=IVoice.js.map
 var ResourceManagerHelper = (function () {
