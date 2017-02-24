@@ -6,7 +6,7 @@ var AliveClass = (function () {
         this.lastPlaySoundTime = 0;
     }
     AliveClass.prototype.onTick = function (time) {
-        if (!this.characterManager.isCharacterBeingDragged() && !this.configurationMananger.getIsScreenOff())
+        if (!this.characterManager.isCharacterBeingDragged() && !this.configurationMananger.isScreenOff())
             this.reactToSurfaceChange();
         this.onTick(time);
         this.currentTime = time;
@@ -71,9 +71,9 @@ var AliveClass = (function () {
         this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();
         this.drawAndPlayRandomResourceByCategory(AgentConstants.CHARACTER_ACTIVATION);
     };
-    AliveClass.prototype.onActionReceived = function (actionName, jsonedData) {
-        this.actionManager.showMessage(actionName + " received");
-        this.drawAndPlayRandomResourceByCategory(actionName);
+    AliveClass.prototype.onEventOccurred = function (eventName, jsonedData) {
+        this.actionManager.showMessage(eventName + " received");
+        this.drawAndPlayRandomResourceByCategory(eventName);
     };
     AliveClass.prototype.onMove = function (oldX, oldY, newX, newY) {
         var Xdiff = Math.abs(oldX - newX);
