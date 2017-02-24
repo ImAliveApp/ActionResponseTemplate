@@ -1,4 +1,4 @@
-## Action Response Character:
+## Action Response Template:
 
 ### Main concept:
 This sample is of a character that responds to actions (events) that occures on the phone.
@@ -19,8 +19,8 @@ Most of the work is done in the "onActionReceived" method:
 ```
 
     onActionReceived(actionName: string, jsonedData: string): void {
-        this.actionManager.showMessage(categoryName + " received");
-        this.drawAndPlayRandomResourceByCategory(categoryName);
+        this.actionManager.showMessage(actionName + " received");
+        this.drawAndPlayRandomResourceByCategory(actionName);
     }
 ```
 
