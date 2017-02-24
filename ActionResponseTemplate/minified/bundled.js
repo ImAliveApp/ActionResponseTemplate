@@ -400,14 +400,11 @@ var ResourceManagerHelper = (function () {
 ;
 //# sourceMappingURL=IDatabaseManager.js.map
 //# sourceMappingURL=IManagersHandler.js.map
-//# sourceMappingURL=IMenuBuilder.js.map
 ;
 //# sourceMappingURL=IMenuManager.js.map
 ;
 //# sourceMappingURL=IResourceManager.js.map
 //# sourceMappingURL=IRestManager.js.map
-;
-//# sourceMappingURL=ISpeechManager.js.map
 ;
 //# sourceMappingURL=ISpeechToTextManager.js.map
 ;
