@@ -6,7 +6,7 @@ var AliveClass = (function () {
         this.lastPlaySoundTime = 0;
     }
     AliveClass.prototype.onTick = function (time) {
-        if (!this.characterManager.isCharacterBeingDragged() && !this.configurationMananger.getIsScreenOff())
+        if (!this.characterManager.isCharacterBeingDragged() && !this.configurationMananger.isScreenOff())
             this.reactToSurfaceChange();
         this.onTick(time);
         this.currentTime = time;

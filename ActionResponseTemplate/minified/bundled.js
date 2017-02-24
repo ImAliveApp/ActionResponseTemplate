@@ -71,9 +71,9 @@ var AliveClass = (function () {
         this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();
         this.drawAndPlayRandomResourceByCategory(AgentConstants.CHARACTER_ACTIVATION);
     };
-    AliveClass.prototype.onActionReceived = function (categoryName, jsonedData) {
-        this.actionManager.showMessage(categoryName + " received");
-        this.drawAndPlayRandomResourceByCategory(categoryName);
+    AliveClass.prototype.onActionReceived = function (actionName, jsonedData) {
+        this.actionManager.showMessage(actionName + " received");
+        this.drawAndPlayRandomResourceByCategory(actionName);
     };
     AliveClass.prototype.onMove = function (oldX, oldY, newX, newY) {
         var Xdiff = Math.abs(oldX - newX);
