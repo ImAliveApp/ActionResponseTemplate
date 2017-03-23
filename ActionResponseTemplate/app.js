@@ -58,6 +58,7 @@ var AliveClass = (function () {
         this.onTick(time);
     };
     AliveClass.prototype.onStart = function (handler, disabledPermissions) {
+        this.lastPhoneEventOccurred = "";
         this.actionManager = handler.getActionManager();
         this.resourceManager = handler.getResourceManager();
         this.databaseManager = handler.getDatabaseManager();
@@ -156,6 +157,9 @@ var AliveClass = (function () {
         }
     };
     AliveClass.prototype.playRandomResourceByCategory = function (categoryName) {
+        if (this.lastPhoneEventOccurred == categoryName)
+            return;
+        this.lastPhoneEventOccurred = categoryName;
         var sound = this.resourceManagerHelper.chooseRandomSound(categoryName);
         if (sound != null) {
             this.lastPlaySoundTime = this.currentTime;

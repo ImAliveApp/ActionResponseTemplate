@@ -5,6 +5,8 @@ class AliveClass implements IAliveAgent {
     // ReSharper disable once InconsistentNaming
     private static UNREGISTERED_CATEGORY_RESOURCE = -999;
 
+    private lastPhoneEventOccurred: string;
+
     private actionManager: IActionManager;
     private resourceManager: IResourceManager;
     private databaseManager: IDatabaseManager;
@@ -93,6 +95,7 @@ class AliveClass implements IAliveAgent {
     }
 
     onStart(handler: IManagersHandler, disabledPermissions: string[]): void {
+        this.lastPhoneEventOccurred = "";
         this.actionManager = handler.getActionManager();
         this.resourceManager = handler.getResourceManager();
         this.databaseManager = handler.getDatabaseManager();
@@ -212,6 +215,10 @@ class AliveClass implements IAliveAgent {
     }
 
     playRandomResourceByCategory(categoryName: string): void {
+        if (this.lastPhoneEventOccurred == categoryName)
+            return;
+
+        this.lastPhoneEventOccurred = categoryName;
         let sound = this.resourceManagerHelper.chooseRandomSound(categoryName);
         if (sound != null)
         {
