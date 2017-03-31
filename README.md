@@ -16,7 +16,7 @@ In order to use this template, do the following steps:
 
 ### The code:
 Most of the work is done in the "onActionReceived" method:
-```
+```javascript
 
     onActionReceived(actionName: string, jsonedData: string): void {
         this.actionManager.showMessage(actionName + " received");
