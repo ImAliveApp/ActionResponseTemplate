@@ -10,7 +10,6 @@ class AliveClass implements IAliveAgent {
     private actionManager: IActionManager;
     private resourceManager: IResourceManager;
     private characterManager: ICharacterManager;
-    private menuManager: IMenuManager;
     private configurationMananger: IConfigurationManager;
     private managersHandler: IManagersHandler;
 
