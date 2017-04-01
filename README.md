@@ -16,11 +16,10 @@ In order to use this template, do the following steps:
 
 ### The code:
 Most of the work is done in the "onActionReceived" method:
-```
-
-    onActionReceived(actionName: string, jsonedData: string): void {
-        this.actionManager.showMessage(actionName + " received");
-        this.drawAndPlayRandomResourceByCategory(actionName);
+```javascript
+    onPhoneEventOccurred(eventName: string, jsonedData: string): void {
+        this.actionManager.showMessage(eventName + " received");
+        this.drawAndPlayRandomResourceByCategory(eventName);
     }
 ```
 
