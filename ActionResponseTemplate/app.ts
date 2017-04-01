@@ -9,13 +9,10 @@ class AliveClass implements IAliveAgent {
 
     private actionManager: IActionManager;
     private resourceManager: IResourceManager;
-    private databaseManager: IDatabaseManager;
     private characterManager: ICharacterManager;
-    private tamagochyManager: IMenuManager;
+    private menuManager: IMenuManager;
     private configurationMananger: IConfigurationManager;
-    private restManager: IRestManager;
     private managersHandler: IManagersHandler;
-    private awarenessManager: IAwarenessManager;
 
     private resourceManagerHelper: ResourceManagerHelper;
 
@@ -44,12 +41,8 @@ class AliveClass implements IAliveAgent {
         this.lastPhoneEventOccurred = "";
         this.actionManager = handler.getActionManager();
         this.resourceManager = handler.getResourceManager();
-        this.databaseManager = handler.getDatabaseManager();
         this.characterManager = handler.getCharacterManager();
-        this.tamagochyManager = handler.getMenuManager();
         this.configurationMananger = handler.getConfigurationManager();
-        this.restManager = handler.getRestManager();
-        this.awarenessManager = handler.getAwarenessManager();
         this.resourceManagerHelper = new ResourceManagerHelper(this.resourceManager);
         this.actionManager.move(0, this.configurationMananger.getScreenHeight(), 0);
         this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();

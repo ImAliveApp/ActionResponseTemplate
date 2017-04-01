@@ -14,12 +14,8 @@ var AliveClass = (function () {
         this.lastPhoneEventOccurred = "";
         this.actionManager = handler.getActionManager();
         this.resourceManager = handler.getResourceManager();
-        this.databaseManager = handler.getDatabaseManager();
         this.characterManager = handler.getCharacterManager();
-        this.tamagochyManager = handler.getMenuManager();
         this.configurationMananger = handler.getConfigurationManager();
-        this.restManager = handler.getRestManager();
-        this.awarenessManager = handler.getAwarenessManager();
         this.resourceManagerHelper = new ResourceManagerHelper(this.resourceManager);
         this.actionManager.move(0, this.configurationMananger.getScreenHeight(), 0);
         this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();
