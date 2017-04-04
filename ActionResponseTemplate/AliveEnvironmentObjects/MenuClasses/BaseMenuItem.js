@@ -12,10 +12,10 @@ var PictureMenuItem = (function () {
     function PictureMenuItem() {
         this.ViewType = ViewType.Picture;
     }
-    PictureMenuItem.UseProfilePicture = "Use Profile Picture";
-    PictureMenuItem.UseCoverPicture = "Use Cover Picture";
     return PictureMenuItem;
 }());
+PictureMenuItem.UseProfilePicture = "Use Profile Picture";
+PictureMenuItem.UseCoverPicture = "Use Cover Picture";
 var ButtonMenuItem = (function () {
     function ButtonMenuItem() {
         this.ViewType = ViewType.Button;

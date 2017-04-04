@@ -407,6 +407,7 @@ var AgentConstants = (function () {
 //# sourceMappingURL=IAliveWeather.js.map
 //# sourceMappingURL=ICurrentTime.js.map
 //# sourceMappingURL=IMenuBuilder.js.map
+//# sourceMappingURL=IRectangle.js.map
 //# sourceMappingURL=ITime.js.map
 //# sourceMappingURL=IVoice.js.map
 var ResourceManagerHelper = (function () {
@@ -3010,6 +3011,9 @@ var collections;
     collections.BSTree = BSTree;
 })(collections || (collections = {})); // End of module 
 //# sourceMappingURL=collections.js.map
+//# sourceMappingURL=IAliveLocation.js.map
+//# sourceMappingURL=IAliveUserActivity.js.map
+//# sourceMappingURL=IAliveWeather.js.map
 //# sourceMappingURL=ICalendarEvent.js.map
 var BaseMenuItem = (function () {
     function BaseMenuItem() {

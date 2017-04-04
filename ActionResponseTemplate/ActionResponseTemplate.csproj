@@ -32,9 +32,10 @@
     <TypeScriptCompile Include="AliveEnvironmentObjects\AgentConstants.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\Calendar\ICalendarEvent.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\IAliveResource.ts" />
-    <TypeScriptCompile Include="AliveEnvironmentObjects\IAliveUserActivity.ts" />
-    <TypeScriptCompile Include="AliveEnvironmentObjects\IAliveWeather.ts" />
+    <TypeScriptCompile Include="AliveEnvironmentObjects\AwarenessClasses\IAliveUserActivity.ts" />
+    <TypeScriptCompile Include="AliveEnvironmentObjects\AwarenessClasses\IAliveWeather.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\ICurrentTime.ts" />
+    <TypeScriptCompile Include="AliveEnvironmentObjects\IRectangle.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\ITime.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\IVoice.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\MenuClasses\BaseMenuItem.ts" />
@@ -50,7 +51,7 @@
     <TypeScriptCompile Include="AliveEnvironmentObjects\MenuInterfaces\ITextBoxMenuItem.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\Places\IAliveLatLng.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\Places\IAliveLatLngBounds.ts" />
-    <TypeScriptCompile Include="AliveEnvironmentObjects\IAliveLocation.ts" />
+    <TypeScriptCompile Include="AliveEnvironmentObjects\AwarenessClasses\IAliveLocation.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\Places\IAlivePlace.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\Places\IAlivePlaceLikelihood.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\Places\PlaceType.ts" />
