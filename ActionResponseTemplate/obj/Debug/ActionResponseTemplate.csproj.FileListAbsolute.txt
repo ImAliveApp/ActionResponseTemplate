@@ -1,6 +1,5 @@
 C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\bin\ActionResponseTemplate.dll.config
 C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\bin\ActionResponseTemplate.dll
 C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\bin\ActionResponseTemplate.pdb
-C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\obj\Debug\ActionResponseTemplate.csprojResolveAssemblyReference.cache
 C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\obj\Debug\ActionResponseTemplate.dll
 C:\Users\Hay Zohar\Documents\GitHub\ActionResponseTemplate\ActionResponseTemplate\obj\Debug\ActionResponseTemplate.pdb
