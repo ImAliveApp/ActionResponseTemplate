@@ -302,7 +302,7 @@ class AliveClass implements IAliveAgent {
         let sound = this.resourceManagerHelper.chooseRandomSound(categoryName);
         if (sound != null) {
             this.lastPlaySoundTime = this.currentTime;
-            this.actionManager.playSound(sound);
+            this.actionManager.playSound(sound, false);
         }
     }
 }
