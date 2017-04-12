@@ -57,8 +57,6 @@ class AliveClass implements IAliveAgent {
         if (!this.characterManager.isCharacterBeingDragged() && !this.configurationMananger.isScreenOff())
             this.reactToSurfaceChange();
 
-        this.onTick(time);
-
         this.currentTime = time;
     }
 
