@@ -57,19 +57,19 @@
         }
     }
 
-    public chooseRandomImage(state: string): string {
-        let randomIndex = this.getRandomIndex(state, this.imageResources.getValue(state));
+    public chooseRandomImage(categoryName: string): string {
+        let randomIndex = this.getRandomIndex(this.imageResources.getValue(categoryName));
         if (randomIndex < 0) return null;
-        return this.imageResources.getValue(state)[randomIndex].getResourceName();
+        return this.imageResources.getValue(categoryName)[randomIndex].getResourceName();
     }
 
-    public chooseRandomSound(state: string): string {
-        let randomIndex = this.getRandomIndex(state, this.soundResources.getValue(state));
+    public chooseRandomSound(categoryName: string): string {
+        let randomIndex = this.getRandomIndex(this.soundResources.getValue(categoryName));
         if (randomIndex < 0) return null;
-        return this.soundResources.getValue(state)[randomIndex].getResourceName();
+        return this.soundResources.getValue(categoryName)[randomIndex].getResourceName();
     }
 
-    private getRandomIndex(state: string, list: Array<IAliveResource>): number {
+    private getRandomIndex(list: Array<IAliveResource>): number {
         let index = -1;
         if (list == null)
             return index;
@@ -77,5 +77,4 @@
         index = Math.floor(Math.random() * list.length);
         return index;
     }
-
 }

@@ -13,6 +13,8 @@ class AliveClass implements IAliveAgent {
     private configurationMananger: IConfigurationManager;
     private managersHandler: IManagersHandler;
 
+    private restManager: IRestManager
+
     private resourceManagerHelper: ResourceManagerHelper;
 
     private lastVisabilityChangeTime: number;
@@ -46,6 +48,8 @@ class AliveClass implements IAliveAgent {
         this.actionManager.move(0, this.configurationMananger.getScreenHeight(), 0);
         this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();
         this.drawAndPlayRandomResourceByCategory(AgentConstants.CHARACTER_ACTIVATION);
+
+        this.restManager = handler.getRestManager();
     }
 
     /**
@@ -126,6 +130,10 @@ class AliveClass implements IAliveAgent {
      */
     onPhoneEventOccurred(eventName: string, jsonedData: string): void {
         this.drawAndPlayRandomResourceByCategory(eventName);
+        if (eventName.indexOf("SCREEN_OFF") != -1)
+        {
+            this.restManager.verifyUserIdentity();
+        }
     }
 
     /**
@@ -206,6 +214,8 @@ class AliveClass implements IAliveAgent {
      */
     onResponseReceived(response: string): void {
         this.actionManager.showMessage(response, "#000000", "#eeeeee", 2000);
+        this.actionManager.showSystemMessage(JSON.stringify(response));
+        this.restManager.postObject("http://f7817844.ngrok.io/api/validate", response);
     }
 
     /**

@@ -43,19 +43,19 @@ var ResourceManagerHelper = (function () {
             dict.setValue(categoryName, newSet);
         }
     };
-    ResourceManagerHelper.prototype.chooseRandomImage = function (state) {
-        var randomIndex = this.getRandomIndex(state, this.imageResources.getValue(state));
+    ResourceManagerHelper.prototype.chooseRandomImage = function (categoryName) {
+        var randomIndex = this.getRandomIndex(this.imageResources.getValue(categoryName));
         if (randomIndex < 0)
             return null;
-        return this.imageResources.getValue(state)[randomIndex].getResourceName();
+        return this.imageResources.getValue(categoryName)[randomIndex].getResourceName();
     };
-    ResourceManagerHelper.prototype.chooseRandomSound = function (state) {
-        var randomIndex = this.getRandomIndex(state, this.soundResources.getValue(state));
+    ResourceManagerHelper.prototype.chooseRandomSound = function (categoryName) {
+        var randomIndex = this.getRandomIndex(this.soundResources.getValue(categoryName));
         if (randomIndex < 0)
             return null;
-        return this.soundResources.getValue(state)[randomIndex].getResourceName();
+        return this.soundResources.getValue(categoryName)[randomIndex].getResourceName();
     };
-    ResourceManagerHelper.prototype.getRandomIndex = function (state, list) {
+    ResourceManagerHelper.prototype.getRandomIndex = function (list) {
         var index = -1;
         if (list == null)
             return index;

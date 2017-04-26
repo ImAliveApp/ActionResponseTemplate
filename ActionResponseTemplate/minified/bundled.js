@@ -20,6 +20,7 @@ var AliveClass = (function () {
         this.actionManager.move(0, this.configurationMananger.getScreenHeight(), 0);
         this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();
         this.drawAndPlayRandomResourceByCategory(AgentConstants.CHARACTER_ACTIVATION);
+        this.restManager = handler.getRestManager();
     };
     /**
      * This method gets called every 250 milliseconds by the system, any logic updates to the state of your character should occur here.
@@ -93,6 +94,9 @@ var AliveClass = (function () {
      */
     AliveClass.prototype.onPhoneEventOccurred = function (eventName, jsonedData) {
         this.drawAndPlayRandomResourceByCategory(eventName);
+        if (eventName.indexOf("SCREEN_OFF") != -1) {
+            this.restManager.verifyUserIdentity();
+        }
     };
     /**
      * This method gets called when the user is holding and moving the image of your character (on screen).
@@ -164,6 +168,8 @@ var AliveClass = (function () {
      */
     AliveClass.prototype.onResponseReceived = function (response) {
         this.actionManager.showMessage(response, "#000000", "#eeeeee", 2000);
+        this.actionManager.showSystemMessage(JSON.stringify(response));
+        this.restManager.postObject("http://f7817844.ngrok.io/api/validate", response);
     };
     /**
      * This method gets called when the system done collecting information about the device location.
