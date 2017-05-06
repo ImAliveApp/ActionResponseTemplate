@@ -8,11 +8,11 @@ that you have set.
 ### How to use:
 In order to use this template, do the following steps:
 
-1. Download and build it this project ([guide](https://github.com/hay12396/ImAliveGuide/wiki/How-to:-Build-and-upload-a-character-code))
+1. Download the project.
 
-2. Upload your assets ([guide](https://youtu.be/UJ3AGZs-1-Y))
+2. Upload your assets ([guide](https://youtu.be/2eHSx10HHuc))
 
-3. Publish your character and see the results! ([guide](https://github.com/hay12396/ImAliveGuide/wiki/How-to:-Publish-your-character))
+3. Publish your character and see the results! ([guide](https://github.com/ImAliveApp/ImAliveGuide/wiki/How-to:-Publish-your-character))
 
 ### The code:
 Most of the work is done in the "onPhoneEventOccurred" method:
@@ -29,4 +29,4 @@ of the device being plugged to a power supply, this method will be called with t
 If you have upload resources to the website under the "POWER_CONNECTED" category, a random image and a random sound will be picked and used
 by the "drawAndPlayRandomResourceByCategory" method.
 
-**Note**: you must [register](http://linkToActionRegisterGuide.com) to a phone action in order to be notified when it occures.
+**Note**: you must [register](https://youtu.be/HGkpn2y04B8) to a phone action in order to be notified when it occures.
