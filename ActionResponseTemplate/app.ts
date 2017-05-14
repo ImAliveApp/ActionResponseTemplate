@@ -10,7 +10,7 @@ class AliveClass implements IAliveAgent {
     private actionManager: IActionManager;
     private resourceManager: IResourceManager;
     private characterManager: ICharacterManager;
-    private configurationMananger: IConfigurationManager;
+    private configurationManager: IConfigurationManager;
     private managersHandler: IManagersHandler;
 
     private restManager: IRestManager
@@ -43,10 +43,10 @@ class AliveClass implements IAliveAgent {
         this.actionManager = handler.getActionManager();
         this.resourceManager = handler.getResourceManager();
         this.characterManager = handler.getCharacterManager();
-        this.configurationMananger = handler.getConfigurationManager();
+        this.configurationManager = handler.getConfigurationManager();
         this.resourceManagerHelper = new ResourceManagerHelper(this.resourceManager);
-        this.actionManager.move(0, this.configurationMananger.getScreenHeight(), 0);
-        this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();
+        this.actionManager.move(0, this.configurationManager.getScreenHeight(), 0);
+        this.resizeRatio = this.configurationManager.getMaximalResizeRatio();
         this.drawAndPlayRandomResourceByCategory(AgentConstants.CHARACTER_ACTIVATION);
 
         this.restManager = handler.getRestManager();
@@ -58,7 +58,7 @@ class AliveClass implements IAliveAgent {
      * @param time The current time (in milliseconds) on the device.
      */
     onTick(time: number): void {
-        if (!this.characterManager.isCharacterBeingDragged() && !this.configurationMananger.isScreenOff())
+        if (!this.characterManager.isCharacterBeingDragged() && !this.configurationManager.isScreenOff())
             this.reactToSurfaceChange();
 
         this.currentTime = time;
@@ -70,8 +70,8 @@ class AliveClass implements IAliveAgent {
     reactToSurfaceChange(): void {
         let speed = -999;
         let category = "";
-        let angle = this.configurationMananger.getCurrentSurfaceAngle();
-        let orientation = this.configurationMananger.getScreenOrientation();
+        let angle = this.configurationManager.getCurrentSurfaceAngle();
+        let orientation = this.configurationManager.getScreenOrientation();
         if (orientation == AgentConstants.ORIENTATION_PORTRAIT) {
             if (angle > 10 && angle < 70) {
                 speed = angle - 10;
@@ -171,7 +171,7 @@ class AliveClass implements IAliveAgent {
      */
     onRelease(currentX: number, currentY: number): void {
         this.drawAndPlayRandomResourceByCategory(AgentConstants.ON_RELEASE);
-        let screenHeight = this.configurationMananger.getScreenHeight();
+        let screenHeight = this.configurationManager.getScreenHeight();
         if (currentY < screenHeight - 50) {
             this.actionManager.move(0, screenHeight - 50, 250);
         }
@@ -303,7 +303,7 @@ class AliveClass implements IAliveAgent {
      * @param categoryName The name of the category that the sound resource belongs to.
      */
     playRandomResourceByCategory(categoryName: string): void {
-        if (this.lastPhoneEventOccurred == categoryName && this.configurationMananger.isSoundPlaying())
+        if (this.lastPhoneEventOccurred == categoryName && this.configurationManager.isSoundPlaying())
             return;
 
         this.lastPhoneEventOccurred = categoryName;
