@@ -9,23 +9,23 @@ var AliveClass = (function () {
         this.actionManager = handler.getActionManager();
         this.resourceManager = handler.getResourceManager();
         this.characterManager = handler.getCharacterManager();
-        this.configurationMananger = handler.getConfigurationManager();
+        this.configurationManager = handler.getConfigurationManager();
         this.resourceManagerHelper = new ResourceManagerHelper(this.resourceManager);
-        this.actionManager.move(0, this.configurationMananger.getScreenHeight(), 0);
-        this.resizeRatio = this.configurationMananger.getMaximalResizeRatio();
+        this.actionManager.move(0, this.configurationManager.getScreenHeight(), 0);
+        this.resizeRatio = this.configurationManager.getMaximalResizeRatio();
         this.drawAndPlayRandomResourceByCategory(AgentConstants.CHARACTER_ACTIVATION);
         this.restManager = handler.getRestManager();
     };
     AliveClass.prototype.onTick = function (time) {
-        if (!this.characterManager.isCharacterBeingDragged() && !this.configurationMananger.isScreenOff())
+        if (!this.characterManager.isCharacterBeingDragged() && !this.configurationManager.isScreenOff())
             this.reactToSurfaceChange();
         this.currentTime = time;
     };
     AliveClass.prototype.reactToSurfaceChange = function () {
         var speed = -999;
         var category = "";
-        var angle = this.configurationMananger.getCurrentSurfaceAngle();
-        var orientation = this.configurationMananger.getScreenOrientation();
+        var angle = this.configurationManager.getCurrentSurfaceAngle();
+        var orientation = this.configurationManager.getScreenOrientation();
         if (orientation == AgentConstants.ORIENTATION_PORTRAIT) {
             if (angle > 10 && angle < 70) {
                 speed = angle - 10;
@@ -95,7 +95,7 @@ var AliveClass = (function () {
     };
     AliveClass.prototype.onRelease = function (currentX, currentY) {
         this.drawAndPlayRandomResourceByCategory(AgentConstants.ON_RELEASE);
-        var screenHeight = this.configurationMananger.getScreenHeight();
+        var screenHeight = this.configurationManager.getScreenHeight();
         if (currentY < screenHeight - 50) {
             this.actionManager.move(0, screenHeight - 50, 250);
         }
@@ -156,7 +156,7 @@ var AliveClass = (function () {
         }
     };
     AliveClass.prototype.playRandomResourceByCategory = function (categoryName) {
-        if (this.lastPhoneEventOccurred == categoryName && this.configurationMananger.isSoundPlaying())
+        if (this.lastPhoneEventOccurred == categoryName && this.configurationManager.isSoundPlaying())
             return;
         this.lastPhoneEventOccurred = categoryName;
         var sound = this.resourceManagerHelper.chooseRandomSound(categoryName);
