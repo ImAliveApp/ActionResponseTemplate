@@ -165,6 +165,8 @@ var AliveClass = (function () {
             this.actionManager.playSound(sound, false);
         }
     };
+    AliveClass.prototype.onApplicationEventOccurred = function (eventName, jsonedData) {
+    };
     return AliveClass;
 }());
 AliveClass.UNREGISTERED_CATEGORY_RESOURCE = -999;

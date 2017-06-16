@@ -33,9 +33,11 @@
     <TypeScriptCompile Include="AliveEnvironmentObjects\IAliveResource.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\AwarenessClasses\IAliveUserActivity.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\AwarenessClasses\IAliveWeather.ts" />
+    <TypeScriptCompile Include="AliveEnvironmentObjects\ICharacter.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\ICurrentTime.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\IRectangle.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\ITime.ts" />
+    <TypeScriptCompile Include="AliveEnvironmentObjects\IUserInformation.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\IVoice.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\MenuClasses\BaseMenuItem.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\MenuClasses\MenuHeader.ts" />
@@ -62,6 +64,7 @@
     <TypeScriptCompile Include="AliveInterfaces\ICharacterManager.ts" />
     <TypeScriptCompile Include="AliveInterfaces\IConfigurationManager.ts" />
     <TypeScriptCompile Include="AliveInterfaces\IDatabaseManager.ts" />
+    <TypeScriptCompile Include="AliveInterfaces\IInformationManager.ts" />
     <TypeScriptCompile Include="AliveInterfaces\IManagersHandler.ts" />
     <TypeScriptCompile Include="AliveEnvironmentObjects\IMenuBuilder.ts" />
     <TypeScriptCompile Include="AliveInterfaces\IMenuManager.ts" />
