@@ -165,7 +165,7 @@ var AliveClass = (function () {
             this.actionManager.playSound(sound, false);
         }
     };
-    AliveClass.prototype.onApplicationEventOccurred = function (eventName, jsonedData) {
+    AliveClass.prototype.onUserEventOccurred = function (eventName, jsonedData) {
     };
     return AliveClass;
 }());

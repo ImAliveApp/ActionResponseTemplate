@@ -315,12 +315,12 @@ class AliveClass implements IAliveAgent {
     }
 
     /**
-     * This method will be called once an application event will occur.
+     * This method will be called once a user event will occur.
      * You can use AgentConstants.APPLICATION_EVENT_x to check which event occurred.
      * @param eventName The name of the event, compare this to AgentConstants.APPLICATION_EVENT_x.
      * @param jsonedData Extra data about the event.
      */
-    onApplicationEventOccurred(eventName: string, jsonedData: string): void {
+    onUserEventOccurred(eventName: string, jsonedData: string): void {
 
     }
 }

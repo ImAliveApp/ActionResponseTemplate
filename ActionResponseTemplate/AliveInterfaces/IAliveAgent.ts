@@ -15,5 +15,5 @@
     onWeatherReceived(weather: IAliveWeather): void;
     onPlacesReceived(places: IAlivePlaceLikelihood[]): void;
     onSpeechRecognitionResults(results: string): void;
-    onApplicationEventOccurred(eventName: string, jsonedData: string): void;
+    onUserEventOccurred(eventName: string, jsonedData: string): void;
 };
