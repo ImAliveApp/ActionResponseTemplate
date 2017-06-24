@@ -73,26 +73,6 @@ var AliveClass = (function () {
             this.restManager.verifyUserIdentity();
         }
     };
-    AliveClass.prototype.onMove = function (oldX, oldY, newX, newY) {
-        var Xdiff = Math.abs(oldX - newX);
-        var Ydiff = Math.abs(oldY - newY);
-        if (Xdiff > Ydiff) {
-            if (newX > oldX) {
-                this.drawAndPlayRandomResourceByCategory(AgentConstants.ON_MOVE_RIGHT);
-            }
-            else {
-                this.drawAndPlayRandomResourceByCategory(AgentConstants.ON_MOVE_LEFT);
-            }
-        }
-        else {
-            if (newY > oldY) {
-                this.drawAndPlayRandomResourceByCategory(AgentConstants.ON_MOVE_DOWN);
-            }
-            else {
-                this.drawAndPlayRandomResourceByCategory(AgentConstants.ON_MOVE_UP);
-            }
-        }
-    };
     AliveClass.prototype.onRelease = function (currentX, currentY) {
         this.drawAndPlayRandomResourceByCategory(AgentConstants.ON_RELEASE);
         var screenHeight = this.configurationManager.getScreenHeight();
