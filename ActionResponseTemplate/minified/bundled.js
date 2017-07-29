@@ -1830,10 +1830,10 @@ var collections;
     collections.BSTree = BSTree;
 })(collections || (collections = {}));
 //# sourceMappingURL=collections.js.map
+//# sourceMappingURL=ICalendarEvent.js.map
 //# sourceMappingURL=IAliveLocation.js.map
 //# sourceMappingURL=IAliveUserActivity.js.map
 //# sourceMappingURL=IAliveWeather.js.map
-//# sourceMappingURL=ICalendarEvent.js.map
 var BaseMenuItem = (function () {
     function BaseMenuItem() {
     }
