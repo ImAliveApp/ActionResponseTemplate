@@ -1830,10 +1830,10 @@ var collections;
     collections.BSTree = BSTree;
 })(collections || (collections = {}));
 //# sourceMappingURL=collections.js.map
-//# sourceMappingURL=ICalendarEvent.js.map
 //# sourceMappingURL=IAliveLocation.js.map
 //# sourceMappingURL=IAliveUserActivity.js.map
 //# sourceMappingURL=IAliveWeather.js.map
+//# sourceMappingURL=ICalendarEvent.js.map
 var BaseMenuItem = (function () {
     function BaseMenuItem() {
     }
@@ -1864,11 +1864,23 @@ var CheckBoxMenuItem = (function () {
     }
     return CheckBoxMenuItem;
 }());
+var SwitchMenuItem = (function () {
+    function SwitchMenuItem() {
+        this.ViewType = ViewType.Switch;
+    }
+    return SwitchMenuItem;
+}());
 var TextBoxMenuItem = (function () {
     function TextBoxMenuItem() {
         this.ViewType = ViewType.TextBox;
     }
     return TextBoxMenuItem;
+}());
+var HyperLinkMenuItem = (function () {
+    function HyperLinkMenuItem() {
+        this.ViewType = ViewType.HyperLink;
+    }
+    return HyperLinkMenuItem;
 }());
 var ProgressBarMenuItem = (function () {
     function ProgressBarMenuItem() {
@@ -1911,16 +1923,28 @@ var ViewType = (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(ViewType, "Switch", {
+        get: function () { return 5; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ViewType, "HyperLink", {
+        get: function () { return 6; },
+        enumerable: true,
+        configurable: true
+    });
     return ViewType;
 }());
 //# sourceMappingURL=ViewType.js.map
 //# sourceMappingURL=IBaseMenuItem.js.map
 //# sourceMappingURL=IButtonMenuItem.js.map
 //# sourceMappingURL=ICheckBoxMenuItem.js.map
+//# sourceMappingURL=IHyperLinkMenuItem.js.map
 //# sourceMappingURL=IMenuHeader.js.map
 //# sourceMappingURL=IPaintMenuItem.js.map
 //# sourceMappingURL=IPictureMenuItem.js.map
 //# sourceMappingURL=IProgressBarMenuItem.js.map
+//# sourceMappingURL=ISwitchMenuItem.js.map
 //# sourceMappingURL=ITextBoxMenuItem.js.map
 //# sourceMappingURL=IAliveLatLng.js.map
 //# sourceMappingURL=IAliveLatLngBounds.js.map
